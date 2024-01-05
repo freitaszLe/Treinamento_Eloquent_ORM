@@ -16,3 +16,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('home', function() {
+    echo "Estou na home";
+});
+
+Route::get('contato', function() {
+    echo "Estou no contato";
+});
+
+Route::get('sobre', function() {
+    echo "Estou na sobre";
+});
+
+Route::get('servicos', function() {
+    echo "Estou no serviços";
+});
+
