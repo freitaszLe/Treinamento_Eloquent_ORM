@@ -29,7 +29,22 @@ Route::get('sobre', function() {
     echo "Estou na sobre";
 });
 
-Route::get('servicos', function() {
-    echo "Estou no serviços";
+Route::get('servico/{codigo?}', function($codigo = null) {
+    
+    if (!$codigo) {
+        echo "Serviço não encontrado";
+        return;
+    }
+
+    $servicos = [
+        'php' => 'Detalhes do serviço de PHP',
+        'devops' => 'Detalhes do serviço de devops',
+        'frontend' => 'Detalhes do serviço de frontend',
+    ];
+
+    $descricaoServico = $servicos[$codigo];
+
+    echo $descricaoServico;
 });
+
 
