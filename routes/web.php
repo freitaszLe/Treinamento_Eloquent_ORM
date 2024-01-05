@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,17 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('home', function() {
-    echo "Estou na home";
-});
-
-Route::get('contato', function() {
-    echo "Estou no contato";
-});
-
-Route::get('sobre', function() {
-    echo "Estou na sobre";
-});
+Route::get('home', [SiteController::class, 'home']);
+Route::get('contato', [SiteController::class, 'contato']);
+Route::get('sobre', [SiteController::class, 'sobre']);
 
 Route::get('servico/{codigo?}', function($codigo = null) {
     
