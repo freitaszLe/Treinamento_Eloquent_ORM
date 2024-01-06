@@ -27,3 +27,4 @@ Route::get('sobre', [SiteController::class, 'sobre']);
 Route::get('servico/{codigo?}', VerServicos::class);
 
 Route::get('clientes', [ClienteController::class, 'index']);
+Route::get('clientes/create', [ClienteController::class, 'create']);

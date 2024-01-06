@@ -15,4 +15,9 @@ class ClienteController extends Controller
             'clientes' => $clientes
         ]);
     }
+
+    public function create()
+    {
+        return view('clientes.create');
+    }
 }
