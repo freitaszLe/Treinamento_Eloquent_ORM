@@ -24,6 +24,8 @@ class VerServicos extends Controller
     
         $descricaoServico = $servicos[$codigo];
     
-        echo $descricaoServico;
+        return view('servicos', [
+            'descricao' => $descricaoServico
+        ]);
     }
 }
