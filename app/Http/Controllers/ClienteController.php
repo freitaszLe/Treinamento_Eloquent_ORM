@@ -20,4 +20,11 @@ class ClienteController extends Controller
     {
         return view('clientes.create');
     }
+
+    public function store(Request $request)
+    {
+        $dados = $request->all();
+
+        var_dump($dados);
+    }
 }
