@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\VerServicos;
+use App\Models\Client;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,4 +26,6 @@ Route::get('sobre', [SiteController::class, 'sobre']);
 
 Route::get('servico/{codigo?}', VerServicos::class);
 
-
+Route::get('clientes', function() {
+    var_dump(Client::get());
+});
