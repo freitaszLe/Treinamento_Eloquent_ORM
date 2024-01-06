@@ -23,8 +23,13 @@ class ClienteController extends Controller
 
     public function store(Request $request)
     {
-        $dados = $request->all();
+        $novoCliente = new Client;
+        $novoCliente->nome = $request->input('nome');
+        $novoCliente->endereco = $request->input('endereco');
+        $novoCliente->descricao = $request->input('descricao');
 
-        var_dump($dados);
+        $novoCliente->save();
+
+        return redirect('/clientes');
     }
 }
