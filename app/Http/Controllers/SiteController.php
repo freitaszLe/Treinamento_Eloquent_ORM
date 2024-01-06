@@ -8,16 +8,17 @@ class SiteController extends Controller
 {
     public function home()
     {
-        echo "Estou na home usando um controller";
+       return view('home');
     }
 
     public function contato()
     {
-        echo "Estou no contato";    
+        return view('contato');  
     }
 
     public function sobre()
     {
-        echo "Estou no sobre";
+        return view('sobre');  
+
     }
 }
