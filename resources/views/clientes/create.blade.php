@@ -8,10 +8,12 @@
 <body>
     <nav class="bg-gray-300">
         <div class="container mx-auto flex items-center justify-between p-4">
-            <a href="" class="text-2xl font-semibold">Treinaweb</a>
+            <a href="/" class="text-2xl font-semibold">Treinaweb</a>
         
             <ul class="font-medium flex">
-                <li class="px-4">Cadastro de Clientes</li>
+                <li class="px-4">
+                    <a href="/clientes">Cadastro de Clientes</a>
+                </li>
             </ul>
         </div>
     </nav>

@@ -7,7 +7,9 @@ use Illuminate\Http\Request;
 class VerServicos extends Controller
 {
     /**
-     * Handle the incoming request.
+     * Mostra um serviço especifico
+     * 
+     * @param string|null $codigo
      */
     public function __invoke($codigo = null)
     {
