@@ -7,7 +7,7 @@ Desenvolvido no curso de Laravel Fundamentos
 #### Clonar o repositório
 
 ```
-git clone https://github.com/treinaweb/multistack-sistema-administrativo-ediaristas-php.git
+git clone [https://github.com/treinaweb/multistack-sistema-administrativo-ediaristas-php.git](https://github.com/treinaweb/treinaweb-laravel-fundamentos-v2.git)
 ```
 
 #### Instalar as depencências
