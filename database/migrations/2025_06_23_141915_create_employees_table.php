@@ -19,7 +19,7 @@ return new class extends Migration
             $table->date('data_contratacao');
             $table->date('data_demissao')->nullable();
 
-            $table->timestamps();
+            
         });
     }
 
